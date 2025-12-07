@@ -1,0 +1,97 @@
+/* ===== Spacing System ===== */
+:root {
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 1rem;
+  --space-4: 1.5rem;
+  --space-5: 2rem;
+  --space-6: 3rem;
+  --space-7: 4rem;
+
+  --bg: #f7f9fc;
+  --text: #222;
+}
+
+/* page scrolling */
+html {
+  scroll-snap-type: y proximity;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
+/* body properties */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Inter, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* properties for each section (About, Projects, Contact) */
+section {
+  height: 100vh;
+  align-items: center;
+  display: flex;
+  scroll-snap-align: start;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: var(--space-6) var(--space-4);
+}
+
+/* Project slider */
+.project-slider {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  margin-top: var(--space-5);
+}
+
+.slides {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+}
+
+.slide {
+  min-width: 100%;
+  padding: var(--space-4);
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  transition: transform 0.4s ease;
+}
+
+/* buttons */
+.prev, .next {
+  background: white;
+  border: none;
+  padding: 0.75rem 1.25rem;
+  border-radius: 12px;
+  font-size: 1.25rem;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: 
+    transform 0.15s ease,
+    box-shadow 0.2s ease,
+    background 0.2s ease;
+}
+
+/* Hover: lift up slightly */
+.prev:hover,
+.next:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+  background: #f3f3f3;
+}
+
+/* Pressed (active) animation */
+.prev:active,
+.next:active {
+  transform: translateY(0);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
