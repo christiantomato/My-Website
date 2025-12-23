@@ -1,5 +1,6 @@
-/* ===== Spacing System ===== */
+/* Global Variables and Spacing */
 :root {
+  /* spacing relative to html font size */
   --space-1: 0.25rem;
   --space-2: 0.5rem;
   --space-3: 1rem;
@@ -8,18 +9,20 @@
   --space-6: 3rem;
   --space-7: 4rem;
 
-  --bg: #f7f9fc;
-  --text: #222;
+  --bg: #f5ebfa;
+  --text: #000000;
 }
 
-/* page scrolling */
+/* Page Properties */
 html {
+  font-size: 20px;
+  /* page scrolling */
   scroll-snap-type: y proximity;
   overflow-y: scroll;
   scroll-behavior: smooth;
 }
 
-/* body properties */
+/* Body Properties */
 body {
   margin: 0;
   padding: 0;
@@ -28,21 +31,54 @@ body {
   color: var(--text);
 }
 
-/* properties for each section (About, Projects, Contact) */
+/* Section Properties (Intro, About, Projects, Contact) */
 section {
-  height: 100vh;
-  align-items: center;
-  display: flex;
-  scroll-snap-align: start;
+  height: 100vh; /* take up whole screen */
+  scroll-snap-align: start; /* align snap at start */
 }
 
+/* Top Left Navigation */
+.nav {
+  position: fixed;
+  top: var(--space-4);
+  left: var(--space-4);
+  display: flex;
+  gap: var(--space-2);
+  font-size: var(--space-3);
+  z-index: 1000;
+}
+
+.nav a {
+  text-decoration: underline;
+  color: var(--text);
+  opacity: 0.7;
+  transition: opacity 0.2s ease;
+}
+
+.nav a:hover {
+  opacity: 1;
+}
+
+/* Intro Section Specifics */
+
+#intro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.intro-content {
+  font-size: var(--space-5);
+}
+
+/* Container Properties */
 .container {
   max-width: 900px;
   margin: 0 auto;
   padding: var(--space-6) var(--space-4);
 }
 
-/* Project slider */
+/* Project Slider */
 .project-slider {
   display: flex;
   align-items: center;
