@@ -14,6 +14,7 @@
 }
 
 /* Page Properties */
+
 html {
   font-size: 20px;
   /* page scrolling */
@@ -23,6 +24,7 @@ html {
 }
 
 /* Body Properties */
+
 body {
   margin: 0;
   padding: 0;
@@ -32,12 +34,14 @@ body {
 }
 
 /* Section Properties (Intro, About, Projects, Contact) */
+
 section {
   height: 100vh; /* take up whole screen */
   scroll-snap-align: start; /* align snap at start */
 }
 
 /* Top Left Navigation */
+
 .nav {
   position: fixed;
   top: var(--space-4);
@@ -71,6 +75,37 @@ section {
   font-size: var(--space-5);
 }
 
+/* About Section Specfics */
+
+#about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-content {
+  display: flex;
+  gap: 4rem;
+  align-items: center;
+  justify-content: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.about-images {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.about-img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
 /* Container Properties */
 .container {
   max-width: 900px;
@@ -102,6 +137,7 @@ section {
 }
 
 /* buttons */
+
 .prev, .next {
   background: white;
   border: none;
