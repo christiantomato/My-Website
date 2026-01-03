@@ -103,10 +103,15 @@ section {
 }
 
 .about-img {
+  display: none;
   width: 400px;
   height: 400px;
   object-fit: cover;
   border-radius: 20px;
+}
+
+.about-img.active {
+  display: block;
 }
 
 /* Container Properties */
@@ -114,29 +119,6 @@ section {
   max-width: 900px;
   margin: 0 auto;
   padding: var(--space-6) var(--space-4);
-}
-
-/* Project Slider */
-.project-slider {
-  display: flex;
-  align-items: center;
-  gap: var(--space-4);
-  margin-top: var(--space-5);
-}
-
-.slides {
-  display: flex;
-  overflow: hidden;
-  width: 100%;
-}
-
-.slide {
-  min-width: 100%;
-  padding: var(--space-4);
-  background: white;
-  border-radius: 12px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
-  transition: transform 0.4s ease;
 }
 
 /* buttons */
