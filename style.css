@@ -114,6 +114,10 @@ section {
   display: block;
 }
 
+.about-text p {
+  line-height: 1.6;
+}
+
 /* Container Properties */
 .container {
   max-width: 900px;
