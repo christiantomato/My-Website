@@ -1,4 +1,4 @@
-// grab elements
+// grab the elements
 const images = document.querySelectorAll(".about-img");
 const prevBtn = document.querySelector(".prev");
 const nextBtn = document.querySelector(".next");
