@@ -30,7 +30,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif, Arial;
-  background: linear-gradient(180deg, #ccb6ff 0%, #aec8e9 50%, #7958d2 100%);
+  background: linear-gradient(180deg, #d0bbff 0%, #9ba1db 50%, #9776f0 100%);
   color: var(--text-color);
 }
 
@@ -191,6 +191,25 @@ section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+/* Icons and Links */
+
+.social-links {
+  display: flex;
+  gap: var(--space-4);
+  margin-top: var(--space-4);
+}
+
+.social-icon {
+  width: var(--space-6);
+  height: var(--space-6);
+  opacity: 0.7;
+  transition: opacity 0.2s ease;
+}
+
+.social-icon:hover {
+  opacity: 1;
 }
 
 /* buttons */
