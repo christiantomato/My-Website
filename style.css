@@ -160,6 +160,11 @@ section {
   gap: var(--space-7);
 }
 
+.project-links {
+  display: flex;
+  gap: var(--space-3);
+}
+
 .project-image {
   display: flex;
   align-items: center;
